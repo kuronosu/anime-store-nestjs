@@ -1,8 +1,16 @@
 import { Injectable } from '@nestjs/common';
 
+export type Anime = {
+  name: string;
+};
+
 @Injectable()
 export class AppService {
-  getHello(): string {
+  getHello(): String {
     return 'Hello World!';
+  }
+
+  getAnime(): Anime {
+    return { name: 'Joujo Senki' };
   }
 }
