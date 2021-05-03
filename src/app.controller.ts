@@ -12,7 +12,6 @@ export class AppController {
 
   @Get('animes/:id')
   getAnime(@Param('id') id: number): Anime {
-    console.log(id, typeof id);
     return this.appService.getAnime();
   }
 }
